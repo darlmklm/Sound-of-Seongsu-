@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sound of Seongsu</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="app">
+    <section id="home-screen" class="screen active" aria-label="Home">
+      <div class="home-head">
+        <div class="home-title">Sound</div>
+        <div class="home-title center">of</div>
+        <div class="home-title right">Seongsu</div>
+      </div>
+      <div id="home-stage" class="home-stage"></div>
+
+    </section>
+
+    <section id="scene-screen" class="screen" aria-label="Detail scene">
+      <button id="exit-button" class="exit-button" type="button" aria-label="홈으로 돌아가기">
+        <svg viewBox="0 0 32 50" aria-hidden="true" focusable="false">
+          <path class="exit-outline" fill="#00be65" d="M1 0H31V50H1Z"/>
+          <path fill="#000000" d="M3 2L22 7V42L3 48Z"/>
+        </svg>
+      </button>
+      <canvas id="scene-canvas"></canvas>
+    </section>
+  </div>
+
+  <audio id="scene-audio" preload="auto" loop></audio>
+  <script src="app.js"></script>
+</body>
+</html>
